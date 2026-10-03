@@ -1,5 +1,5 @@
 import { useCallback, useLayoutEffect, useRef, useState } from 'react';
-import { ArrowUpRight, BookOpen, ExternalLink, Minus, Plus, X } from 'lucide-react';
+import { ArrowUpRight, ExternalLink, Minus, NotepadText, Plus, X } from 'lucide-react';
 import { motion, useAnimate, useReducedMotion } from 'motion/react';
 import { SiInstagram, SiWhatsapp } from 'react-icons/si';
 
@@ -171,7 +171,6 @@ function App() {
 
           <div className="profile-content">
             <div className="intro-copy">
-              <p className="eyebrow">Bienvenidos a nuestra mesa</p>
               <h1>Un abrazo hecho bocado.</h1>
               <p className="intro">Bocaditos hechos para compartir, repetir y volver a pedir.</p>
 
@@ -183,8 +182,8 @@ function App() {
 
             <section className="actions" aria-label="Carta y pedidos">
               <button type="button" className="action action--menu" onClick={openMenu}>
-                <BookOpen size={22} aria-hidden="true" />
-                <span>Chequea nuestra carta aquí</span>
+                <NotepadText size={22} strokeWidth={1.8} aria-hidden="true" />
+                <span>Revisa nuestra carta aquí</span>
                 <Plus size={20} aria-hidden="true" />
               </button>
               <a className="action action--primary" href={whatsapp} target="_blank" rel="noopener noreferrer">
